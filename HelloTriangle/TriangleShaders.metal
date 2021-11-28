@@ -8,8 +8,9 @@
 #include <metal_stdlib>
 using namespace metal;
 
-vertex float4 base_vertex_function() {
-    return float4(1);
+vertex float4 base_vertex_function(device float3 *vertices [[ buffer(0)]],
+                                   uint vertexId [[vertex_id]]) {
+    return float4(vertices[vertexId], 1);
 }
 
 fragment half4 base_fragment_function() {

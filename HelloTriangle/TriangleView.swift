@@ -8,11 +8,20 @@
 import Foundation
 import MetalKit
 
+public typealias float3 = SIMD3<Float>
+
 class TriangleView: MTKView {
     
     var commandQueue: MTLCommandQueue!
     var renderPipelineState: MTLRenderPipelineState!
+    
+    var buffer: MTLBuffer!
 
+    let vertices: [float3] = [
+        float3(0, 1, 0),
+        float3(-1, -1, 0),
+        float3(1, -1, 0)
+    ]
     
     required init(coder: NSCoder) {
         super.init(coder: coder)
@@ -25,6 +34,8 @@ class TriangleView: MTKView {
         self.commandQueue = device?.makeCommandQueue()
         
         createPipelineState()
+        
+        createBuffers()
     }
     
     func createPipelineState() {
@@ -44,6 +55,11 @@ class TriangleView: MTKView {
         }
     }
     
+    func createBuffers() {
+        buffer = device?.makeBuffer(bytes: vertices, length: MemoryLayout<float3>.stride * vertices.count, options: [])
+    }
+    
+    
     override func draw(_ dirtyRect: NSRect) {
         guard let drawable = self.currentDrawable, let renderPassDescriptor = self.currentRenderPassDescriptor else {
             return
@@ -53,6 +69,8 @@ class TriangleView: MTKView {
         
         let commandEncoder = commandBuffer?.makeRenderCommandEncoder(descriptor: renderPassDescriptor)
         commandEncoder?.setRenderPipelineState(renderPipelineState)
+        commandEncoder?.setVertexBuffer(buffer, offset: 0, index: 0)
+        commandEncoder?.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: vertices.count)
         commandEncoder?.endEncoding()
         
         commandBuffer?.present(drawable)
