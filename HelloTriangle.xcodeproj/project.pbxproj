@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		A6B314332753B7C600ACEA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B314322753B7C600ACEA5F /* AppDelegate.swift */; };
-		A6B314352753B7C600ACEA5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B314342753B7C600ACEA5F /* ViewController.swift */; };
 		A6B314382753B7C600ACEA5F /* HelloTriangle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6B314362753B7C600ACEA5F /* HelloTriangle.xcdatamodeld */; };
 		A6B3143A2753B7CE00ACEA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B314392753B7CE00ACEA5F /* Assets.xcassets */; };
 		A6B3143D2753B7CE00ACEA5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B3143B2753B7CE00ACEA5F /* Main.storyboard */; };
+		A6B314482753BD3800ACEA5F /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B314472753BD3800ACEA5F /* TriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A6B3142F2753B7C600ACEA5F /* HelloTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B314322753B7C600ACEA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6B314342753B7C600ACEA5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6B314372753B7C600ACEA5F /* HelloTriangle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloTriangle.xcdatamodel; sourceTree = "<group>"; };
 		A6B314392753B7CE00ACEA5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6B3143C2753B7CE00ACEA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6B3143E2753B7CE00ACEA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6B3143F2753B7CE00ACEA5F /* HelloTriangle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloTriangle.entitlements; sourceTree = "<group>"; };
+		A6B314472753BD3800ACEA5F /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,12 @@
 			isa = PBXGroup;
 			children = (
 				A6B314322753B7C600ACEA5F /* AppDelegate.swift */,
-				A6B314342753B7C600ACEA5F /* ViewController.swift */,
 				A6B314392753B7CE00ACEA5F /* Assets.xcassets */,
 				A6B3143B2753B7CE00ACEA5F /* Main.storyboard */,
 				A6B3143E2753B7CE00ACEA5F /* Info.plist */,
 				A6B3143F2753B7CE00ACEA5F /* HelloTriangle.entitlements */,
 				A6B314362753B7C600ACEA5F /* HelloTriangle.xcdatamodeld */,
+				A6B314472753BD3800ACEA5F /* TriangleView.swift */,
 			);
 			path = HelloTriangle;
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6B314352753B7C600ACEA5F /* ViewController.swift in Sources */,
 				A6B314332753B7C600ACEA5F /* AppDelegate.swift in Sources */,
+				A6B314482753BD3800ACEA5F /* TriangleView.swift in Sources */,
 				A6B314382753B7C600ACEA5F /* HelloTriangle.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
