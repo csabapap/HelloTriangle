@@ -12,6 +12,7 @@
 		A6B3143A2753B7CE00ACEA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B314392753B7CE00ACEA5F /* Assets.xcassets */; };
 		A6B3143D2753B7CE00ACEA5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B3143B2753B7CE00ACEA5F /* Main.storyboard */; };
 		A6B314482753BD3800ACEA5F /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B314472753BD3800ACEA5F /* TriangleView.swift */; };
+		A6B3144B2753C20000ACEA5F /* TriangleShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A6B3144A2753C20000ACEA5F /* TriangleShaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A6B3143E2753B7CE00ACEA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6B3143F2753B7CE00ACEA5F /* HelloTriangle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloTriangle.entitlements; sourceTree = "<group>"; };
 		A6B314472753BD3800ACEA5F /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		A6B3144A2753C20000ACEA5F /* TriangleShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TriangleShaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A6B3143F2753B7CE00ACEA5F /* HelloTriangle.entitlements */,
 				A6B314362753B7C600ACEA5F /* HelloTriangle.xcdatamodeld */,
 				A6B314472753BD3800ACEA5F /* TriangleView.swift */,
+				A6B3144A2753C20000ACEA5F /* TriangleShaders.metal */,
 			);
 			path = HelloTriangle;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				A6B314332753B7C600ACEA5F /* AppDelegate.swift in Sources */,
 				A6B314482753BD3800ACEA5F /* TriangleView.swift in Sources */,
+				A6B3144B2753C20000ACEA5F /* TriangleShaders.metal in Sources */,
 				A6B314382753B7C600ACEA5F /* HelloTriangle.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
